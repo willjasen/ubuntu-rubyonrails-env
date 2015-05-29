@@ -17,7 +17,7 @@ sudo apt-get -y install nodejs
 sudo apt-get -y install gedit-gmate gedit-plugins
 
 # Install common utilized packages
-sudo apt-get -y install nodejs libpq-dev libmagickwand-dev libqt4-dev libqtwebkit-dev
+sudo apt-get -y install nodejs libpq-dev libmagickwand-dev libqt4-dev libqtwebkit-dev libsqlite3-dev
  
 # Install rbenv
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
