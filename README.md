@@ -1,2 +1,2 @@
 # ubuntu-rubyonrails-env
-My Ruby on Rails environment in Ubuntu
+Bash script for configuring a Ruby on Rails environment on Ubuntu 14.04 LTS
