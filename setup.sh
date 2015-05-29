@@ -1,9 +1,9 @@
 #!/bin/bash
  
-echo -n "Enter Git username: "
-read git_username
-echo -n "Enter Git user email: "
-read git_user_email
+#echo -n "Enter Git username: "
+#read git_username
+#echo -n "Enter Git user email: "
+#read git_user_email
  
 # Update available packages
 sudo apt-get -y update
@@ -75,13 +75,13 @@ gsettings set org.gnome.gedit.plugins.terminal scroll-on-output false
 #gsettings set org.gnome.gedit.plugins.terminal palette '#2E2E34343636:#CCCC00000000:#4E4E9A9A0606:#C4C4A0A00000:#34346565A4A4:#757550507B7B:#060698209A9A:#D3D3D7D7CFCF:#555557575353:#EFEF29292929:#8A8AE2E23434:#FCFCE9E94F4F:#72729F9FCFCF:#ADAD7F7FA8A8:#3434E2E2E2E2:#EEEEEEEEECEC'
  
 # Configure git
-git config --global color.ui true
-git config --global user.name $git_username
-git config --global user.email $git_user_email
+# git config --global color.ui true
+# git config --global user.name $git_username
+# git config --global user.email $git_user_email
 
 # Install Google Chrome
-sudo apt-get -y install libxss1
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome*.deb
-rm google-chrome*.deb
-sudo apt-get -f install
+# sudo apt-get -y install libxss1
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# sudo dpkg -i google-chrome*.deb
+# rm google-chrome*.deb
+# sudo apt-get -f install
