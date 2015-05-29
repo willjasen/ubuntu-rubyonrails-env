@@ -15,18 +15,6 @@ sudo apt-get install nodejs
 # Install common utilized packages
 sudo apt-get -y install nodejs libpq-dev libmagickwand-dev libqt4-dev libqtwebkit-dev
  
-# Install RVM
-#sudo apt-get -y install curl git
-#rm -rf ~/.gnupg/
-#curl -#LO https://rvm.io/mpapis.asc
-#gpg --import mpapis.asc
-#curl -sSL https://get.rvm.io | bash -s stable --ruby
-#source /home/willjasen/.rvm/scripts/rvm
- 
-# Install latest version of Ruby using rvm
-#rvm install 2.1.2
-#rvm use 2.1.2
- 
 # Install rbenv
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
