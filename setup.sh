@@ -5,8 +5,15 @@
 #echo -n "Enter Git user email: "
 #read git_user_email
  
-# Update available packages
+# Add repo for node.js
+sudo add-apt-repository ppa:chris-lea/node.js
+
+# Update and install available packages
 sudo apt-get -y update
+sudo apt-get install nodejs
+
+# Install common utilized packages
+sudo apt-get -y install nodejs libpq-dev libmagickwand-dev libqt4-dev libqtwebkit-dev
  
 # Install RVM
 #sudo apt-get -y install curl git
@@ -31,20 +38,17 @@ echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
  
 # Install Ruby from rbenv
-rbenv install 2.2.1
-rbenv global 2.2.1
+rbenv install 2.2.2
+rbenv global 2.2.2
 ruby -v
  
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 gem install bundler
  
 # Install Rails
-gem install rails
+gem install rails -v 4.2.1
  
 rbenv rehash
- 
-# Install common utilized packages
-sudo apt-get -y install nodejs libpq-dev libmagickwand-dev libqt4-dev libqtwebkit-dev
  
 # Set gedit preferences
 sudo apt-add-repository -y ppa:ubuntu-on-rails/ppa
