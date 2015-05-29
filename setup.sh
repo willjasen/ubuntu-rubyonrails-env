@@ -18,10 +18,11 @@ sudo apt-get -y install nodejs libpq-dev libmagickwand-dev libqt4-dev libqtwebki
 # Install rbenv
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+export PATH="$HOME/.rbenv/bin:$PATH"
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-. ~/.bashrc
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
  
