@@ -6,11 +6,11 @@
 #read git_user_email
  
 # Add repo for node.js
-sudo add-apt-repository ppa:chris-lea/node.js
+sudo add-apt-repository -y ppa:chris-lea/node.js
 
 # Update and install available packages
 sudo apt-get -y update
-sudo apt-get install nodejs
+sudo apt-get -y install nodejs
 
 # Install common utilized packages
 sudo apt-get -y install nodejs libpq-dev libmagickwand-dev libqt4-dev libqtwebkit-dev
@@ -19,9 +19,11 @@ sudo apt-get -y install nodejs libpq-dev libmagickwand-dev libqt4-dev libqtwebki
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+exec $SHELL
  
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+exec $SHELL
 git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
  
 # Install Ruby from rbenv
