@@ -5,12 +5,16 @@
 #echo -n "Enter Git user email: "
 #read git_user_email
  
-# Add repo for node.js
+# Add more repos
 sudo add-apt-repository -y ppa:chris-lea/node.js
+sudo apt-add-repository -y ppa:ubuntu-on-rails/ppa
 
 # Update and install available packages
 sudo apt-get -y update
 sudo apt-get -y install nodejs
+
+# Install gedit plugins
+sudo apt-get -y install gedit-gmate gedit-plugins
 
 # Install common utilized packages
 sudo apt-get -y install nodejs libpq-dev libmagickwand-dev libqt4-dev libqtwebkit-dev
@@ -45,9 +49,6 @@ gem install rails -v 4.2.1
 rbenv rehash
  
 # Set gedit preferences
-sudo apt-add-repository -y ppa:ubuntu-on-rails/ppa
-sudo apt-get -y update
-sudo apt-get -y install gedit-gmate gedit-plugins
 gsettings set org.gnome.gedit.plugins active-plugins "['terminal', 'modelines', 'zeitgeistplugin', 'multiedit', 'docinfo', 'filebrowser', 'time', 'spell']"
 gsettings set org.gnome.gedit.preferences.editor display-line-numbers true
 gsettings set org.gnome.gedit.preferences.editor tabs-size 2
@@ -83,3 +84,5 @@ gsettings set org.gnome.gedit.plugins.terminal scroll-on-output false
 # sudo dpkg -i google-chrome*.deb
 # rm google-chrome*.deb
 # sudo apt-get -f install
+
+# Reload the terminal session before proceeding to coding
