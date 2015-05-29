@@ -47,7 +47,8 @@ gem install bundler
  
 # Install Rails
 gem install rails -v 4.2.1
- 
+
+# Needed for rbenv after Rails is installed
 rbenv rehash
  
 # Set gedit preferences
