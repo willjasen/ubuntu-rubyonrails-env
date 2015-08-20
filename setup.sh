@@ -11,7 +11,6 @@ sudo apt-add-repository -y ppa:ubuntu-on-rails/ppa
 
 # Update and install available packages
 sudo apt-get -y update
-sudo apt-get -y install nodejs
 
 # Install gedit plugins
 sudo apt-get -y install gedit-gmate gedit-plugins
